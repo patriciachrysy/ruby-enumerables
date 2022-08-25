@@ -1,5 +1,6 @@
 module MyEnumerable
 <<<<<<< HEAD
+<<<<<<< HEAD
   def list
     @list ||= []
   end
@@ -8,6 +9,10 @@ module MyEnumerable
     listArray = []
     list.each do |element|
       listArray.push(element) if yield(element)
+=======
+    def list
+      @list ||= []
+>>>>>>> parent of 3c23f4a (fix error)
 =======
     def list
       @list ||= []
