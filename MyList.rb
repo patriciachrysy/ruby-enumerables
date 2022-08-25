@@ -1,6 +1,6 @@
-require_relative 'module'
+require_relative "module"
 
-class Mylist
+class MyList
   include MyEnumerable
 
   def initialize(*list)
@@ -14,7 +14,7 @@ end
 
 # Create instance of MyList
 
-new_list = Mylist.new(1, 2, 3, 4)
+new_list = MyList.new(1, 2, 3, 4)
 
 # Test all? method
 
@@ -28,4 +28,4 @@ new_list.any? { |e| e == 5 } # => false
 
 # Test filter? method
 
-new_list.filter?(&:even?) # => [2, 4]
+new_list.filter? { |e| e.even? } # => [2, 4]

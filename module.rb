@@ -1,4 +1,4 @@
-Module MyEnumerable
+module MyEnumerable
   def list
     @list ||= []
   end
