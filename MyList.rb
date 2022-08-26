@@ -28,4 +28,4 @@ new_list.any? { |e| e == 5 } # => false
 
 # Test filter? method
 
-new_list.filter? { |e| e.even? } # => [2, 4]
+new_list.filter?(&:even?) # => [2, 4]
