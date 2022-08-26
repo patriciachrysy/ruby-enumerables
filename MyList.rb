@@ -1,6 +1,6 @@
-require_relative "module"
+require_relative 'module'
 
-class MyList
+class Mylist
   include MyEnumerable
 
   def initialize(*list)
@@ -14,7 +14,7 @@ end
 
 # Create instance of MyList
 
-new_list = MyList.new(1, 2, 3, 4)
+new_list = Mylist.new(1, 2, 3, 4)
 
 # Test all? method
 

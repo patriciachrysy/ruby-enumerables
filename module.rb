@@ -1,45 +1,29 @@
 module MyEnumerable
-<<<<<<< HEAD
-<<<<<<< HEAD
-  def list
-    @list ||= []
-  end
-
-  def all?
-    listArray = []
-    list.each do |element|
-      listArray.push(element) if yield(element)
-=======
     def list
       @list ||= []
->>>>>>> parent of 3c23f4a (fix error)
-=======
-    def list
-      @list ||= []
->>>>>>> parent of 3c23f4a (fix error)
     end
   
     def all?
-      listArray = []
+      list_array = []
       list.each do |element|
-        listArray.push(element) if yield(element)
+        list_array.push(element) if yield(element)
       end
-      print listArray.length == list.length
+      print list_array.length == list.length
     end
   
     def any?
-      myArray = []
+      list_array = []
       list.each do |element|
-        listArray.push(element) if yield(element)
+        list_array.push(element) if yield(element)
       end
-      puts !listArray.empty?
+      puts !list_array.empty?
     end
   
     def filter?
-      listArray = []
+      list_array = []
       list.each do |element|
-        listArray.push(element) if yield(element)
+        list_array.push(element) if yield(element)
       end
-      print listArray
+      print list_array
     end
   end
